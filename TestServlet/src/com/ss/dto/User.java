@@ -2,16 +2,16 @@ package com.ss.dto;
 
 public class User {
 	private Integer id;
-	private String firstName;
-	private String lastName;
+	private String userName;
+	private Integer password;
 	
 	public User() {}
 	
-	public User(Integer id, String firstName, String lastName) {
+	public User(Integer id, String userName, Integer password) {
 		super();
 		this.id = id;
-		this.firstName = firstName;
-		this.lastName = lastName;
+		this.userName = userName;
+		this.password = password;
 	}
 	
 	public Integer getId() {
@@ -22,16 +22,20 @@ public class User {
 		this.id = id;
 	}
 
-	public String getFirstName() {
-		return firstName;
+	public Integer getPassword() {
+		return password;
 	}
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
+
+	public void setPassword(Integer password) {
+		this.password = password;
 	}
-	public String getLastName() {
-		return lastName;
+
+	public String getUserName() {
+		return userName;
 	}
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
+
+	public void setUserName(String userName) {
+		this.userName = userName;
 	}
+
 }
